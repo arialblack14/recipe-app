@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './core/app-routing.module';
+import { StoreModule } from '@ngrx/store';
+import { recipeReducer } from './core/recipe.reducer';
 
 import { AppComponent } from './core/app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -18,7 +20,8 @@ import { CreateComponent } from './pages/create/create.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.provideStore({ recipe: recipeReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]
