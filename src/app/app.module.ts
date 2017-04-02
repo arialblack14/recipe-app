@@ -9,12 +9,14 @@ import { recipeReducer } from './core/recipe.reducer';
 import { AppComponent } from './core/app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CreateComponent } from './pages/create/create.component';
+import { RecipeNameComponent } from './pages/create/recipe-name/recipe-name.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CreateComponent
+    CreateComponent,
+    RecipeNameComponent
   ],
   imports: [
     BrowserModule,
