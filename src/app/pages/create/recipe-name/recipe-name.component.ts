@@ -5,7 +5,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
   templateUrl: './recipe-name.component.html',
   styleUrls: ['./recipe-name.component.css']
 })
-export class RecipeNameComponent implements OnInit {
+export class RecipeNameComponent {
   recipeNameInput = '';
   @Output() addNameEvent = new EventEmitter();
 

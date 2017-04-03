@@ -1,0 +1,14 @@
+<div class="form-group row">
+    <div class="input-group">
+      <input
+        id="ingredients"
+        name="ingredients"
+        placeholder="Ingredients"
+        class="form-control"
+        [(ngModel)]="recipeIngredientsInput"
+        (change)="addIngredients(recipeIngredientsInput)"/>
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button">+</button>
+      </span>
+    </div>
+</div>

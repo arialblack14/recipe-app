@@ -1,0 +1,11 @@
+<div *ngIf="recipe.name" class="recipe-preview">
+  <div class="recipe-details col-sm-12">
+    <img *ngIf="recipe.image" [src]="recipeImg" />
+    <div id="name"><span>{{recipe.name}}</span></div>
+    <div class="text">{{recipe.ingredients}}</div>
+  </div>
+
+  <p *ngIf="recipe.vegeterian" class="text-center">
+    <strong>Vegeterian: </strong> {{recipeVegeterian}}<br>
+  </p>
+</div>

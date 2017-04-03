@@ -1,3 +1,30 @@
-<p>
-  create works!
-</p>
+<div class="row">
+  <div class="col-sm-6">
+    <form class="form-horizontal">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend>Add new recipe:</legend>
+
+    <app-recipe-name
+      (addNameEvent)="addNameHandler($event)"></app-recipe-name>
+
+    <app-recipe-image
+      (addImageEvent)="addImageHandler($event)"></app-recipe-image>
+
+    <app-recipe-ingredients
+      (addIngredientsEvent)="addIngredientsHandler($event)"></app-recipe-ingredients>
+
+    <app-vegeterian
+      (toggleVegeterianEvent)="toggleVegeterianHandler()"></app-vegeterian>
+
+    </fieldset>
+    </form>
+  </div>
+
+  <div class="col-sm-6">
+    <app-recipe-preview
+      [recipe]="recipe"></app-recipe-preview>
+
+  </div>
+</div>

@@ -1,7 +1,7 @@
 export class Recipe {
   constructor(
     public name: string,
-    public ingredients: Array<string>,
+    public ingredients: string,
     public image: string,
     public vegeterian: boolean
   ) {}
@@ -9,7 +9,7 @@ export class Recipe {
 
 export const initialRecipe: Recipe = {
   name: '',
-  ingredients: [''],
+  ingredients: '',
   image: '',
   vegeterian: false
 };
