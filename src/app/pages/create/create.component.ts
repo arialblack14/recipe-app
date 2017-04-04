@@ -23,7 +23,7 @@ export class CreateComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.recipeStateSubscription = this.recipeState.subscribe((state) => {
       this.recipe = state;
-      this.done = !!(this.recipe.name && this.recipe.image);
+      this.done = !!this.recipe.name;
     });
   }
 

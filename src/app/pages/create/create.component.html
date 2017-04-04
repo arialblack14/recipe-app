@@ -18,6 +18,17 @@
     <app-vegeterian
       (toggleVegeterianEvent)="toggleVegeterianHandler()"></app-vegeterian>
 
+      <p>
+        <button
+          class="btn btn-success btn-lg"
+          *ngIf="recipe.name"
+          [disabled]="!done"
+          (click)="submit()"
+          routerLink="/">
+          Submit
+          </button>
+      </p>
+
     </fieldset>
     </form>
   </div>
